@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+nav .text1 {
+    display: flex;
+    align-items: center;
+}
+
+nav .text1 img.logo {
+    width: 50px;
+    height: 31px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .btn1 {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Section 1 */
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section1 .left {
+    flex: 1;
+}
+
+.section1 .heading1 {
+    font-size: 3rem;
+}
+
+.section1 .text2 {
+    font-size: 1.25rem;
+    text-align: justify;
+    width: 80%;
+}
+
+.section1 .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .img1 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section 2 */
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section2 .left2,
+.section2 .right2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.section2 .heading3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section2 .text3 {
+    font-size: 1.25rem;
+    text-align: justify;
+    width: 80%;
+}
+
+.section2 .img2 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section 3 */
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.section3 .left3 {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: red;
+    padding: 1rem;
+}
+
+.section3 .right3 {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section3 .twodivs {
+    display: flex;
+    gap: 2rem;
+}
+
+.section3 .eightdivs {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+/* Marquee Slides */
+.slideimg {
+    height: 150px;
+    margin: 0 1rem;
+}
+
+/* Headings */
+.heading2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .section1,
+    .section2,
+    .section3 {
+        flex-direction: column;
+    }
+
+    .section1 .text2,
+    .section2 .text3 {
+        width: 100%;
+    }
+}
